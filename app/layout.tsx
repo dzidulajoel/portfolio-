@@ -53,7 +53,7 @@ export default function RootLayout({
                 antialiased
             `}
         >
-            <body className={`${jost.variable} ${poppins.variable} min-h-full w-full`}>
+            <body className={`${jost.variable} ${poppins.variable}`}>
                 {children}
             </body>
         </html>
