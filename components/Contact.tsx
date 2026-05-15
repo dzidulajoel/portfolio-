@@ -37,10 +37,10 @@ const Contact = () => {
 
                                 <div className="text-white flex flex-col justify-start">
                                         <label htmlFor="message">Message</label>
-                                        <textarea name="message" id="message" rows="6" style={{backgroundColor:COLORS.black[800]}} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" placeholder="Entrez votre email ..." ></textarea>
+                                        <textarea name="message" id="message" rows={6} style={{backgroundColor:COLORS.black[800]}} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" placeholder="Entrez votre email ..." ></textarea>
                                 </div>
 
-                                <button type="submit" className="transition-transform duration-300 w-full h-10 rounded-md text-white bg-[#2845D6] cursor-pointer hover:bg-white hover:text-black">Soumettre </button>
+                                <button type="submit" className="transition-transform  text-sm duration-300 w-full h-10 rounded-md text-white bg-[#2845D6] cursor-pointer hover:bg-white hover:text-black">Soumettre </button>
 
 
 
