@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import { COLORS } from "@/constants/color";
 
 const Navbar = () => {
         const pathname = usePathname();
@@ -46,8 +47,8 @@ const Navbar = () => {
         ];
 
         return (
-                <nav className="w-full h-full">
-                        <ul className="flex justify-center items-center h-full gap-8 px-8">
+                <nav className="w-full h-10 rounded-md flex justify-center items-center gap-10" >
+                        <ul className="flex justify-center rounded-md items-center h-full gap-8 px-4" style={{backgroundColor:COLORS.black[800]}}>
                                 {navItems.map((item) => {
                                         const isActive = pathname === item.href;
 

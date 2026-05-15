@@ -132,46 +132,20 @@ const Outils = () => {
         ];
         return (
                 <>
-                        <Title title1="TECHNOLOGIES " title2="OUTILS" />
-                        <div className="mt-8 space-y-8">
+                        <div className="space-y-4">
+                                <Title title1="TECHNOLOGIES " title2="OUTILS" />
+                                <div className="space-y-8">
 
-                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                                        {outils.map((item, index) => (
-                                                <div
-                                                        key={index}
-                                                        className="
-        w-32
-        h-32
-        rounded-2xl
-        bg-white
-        relative
-        flex
-        justify-center
-        items-center
-        shadow-sm
-        hover:scale-105
-        transition-transform
-        duration-300
-      "
-                                                >
-                                                        {/* Icon */}
-                                                        <div className="w-16 h-16 flex justify-center items-center">
-                                                                <Image
-                                                                        width={56}
-                                                                        height={56}
-                                                                        src={item.icones}
-                                                                        alt={item.label}
-                                                                />
+                                        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                                                {outils.map((item, index) => (
+                                                        <div key={index} className=" w-32 h-32 rounded-md bg-white  flex flex-col justify-center items-center gap-4">
+                                                                <div className="w-16 h-16 flex justify-center items-center"><Image width={56} height={56} src={item.icones} alt={item.label} /> </div>
+                                                                <span className={` px-4 text-sm rounded-md font-semibold whitespace-nowrap border ${item.bg} ${item.color} ${item.border} `}>{item.label}</span>
                                                         </div>
+                                                ))}
+                                        </div>
 
-                                                        {/* Badge */}
-                                                        <span className={` absolute bottom-2 left-1/2 -translate-x-1/2 px-4 text-sm rounded-lg font-semibold whitespace-nowrap border ${item.bg} ${item.color} ${item.border} `}>
-                                                                {item.label}
-                                                        </span>
-                                                </div>
-                                        ))}
                                 </div>
-
                         </div>
                 </>
         )

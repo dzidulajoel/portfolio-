@@ -30,24 +30,19 @@ const Projet = () => {
                         label: "SkillGuard",
                         bg: "from-red-900/80 via-red-500/50 to-transparent",
                         image: "/images/projet-001.webp",
-                },
-
-                {
-                        label: "Nufiala",
-                        bg: "from-emerald-900/80 via-emerald-900/50 to-transparent",
-                        image: "/images/projet-001.webp",
-                },
+                }
         ];
 
 
         return (
                 <>
+                <div className="space-y-4">
                         <Title title1="PROJETS" title2="RECENTS" />
-                        <div className="mt-4 flex justify-start items gap-4">
-                                <div className="flex gap-6">
+                        <div className="flex justify-start items gap-4">
+                                <div className="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-6">
                                         {projets.map((item, index) => (
                                                 <div key={index} className="group relative w-16 h-105 overflow-hidden rounded-tl-full rounded-tr-full bg-white/10 backdrop-blur-md cursor-pointer transition-all duration-500">
-                                                        <Image fill src={item.image} alt={item.label} className=" object-cover opacity-40 group-hover:opacity-70 transition-all duration-500" />
+                                                        {/* <Image fill src={item.image}  alt={item.label} className=" object-cover opacity-40 group-hover:opacity-70 transition-all duration-500" /> */}
 
                                                         <div className={` absolute inset-0 bg-linear-to-b ${item.bg}`} />
                                                         <div className=" absolute top-8 left-1/2 -translate-x-1/2 z-10 ">
@@ -60,6 +55,7 @@ const Projet = () => {
                                         ))}
                                 </div>
                         </div>
+                </div>
                 </>
         )
 }
