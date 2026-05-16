@@ -109,35 +109,17 @@ const page = () => {
                 {/* EXPERIENCE */}
                 <section className="rounded-md mb-8">
                     <div className="flex justify-between items-center mb-8">
-                        <h3 className="text-2xl font-bold">
-                            Expériences
-                        </h3>
-
-                        <button className="px-6 w-auto py-2 text-sm rounded-md bg-[#2845D6]/20 border border-[#2845D6]/40 hover:bg-[#2845D6]/30 transition-all">
-                            Ajouter
-                        </button>
+                        <h3 className="text-2xl font-bold"> Expériences</h3>
+                        <button className="px-6 w-auto py-2 text-sm rounded-md bg-[#2845D6]/20 border border-[#2845D6]/40 hover:bg-[#2845D6]/30 transition-all">Ajouter</button>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-6">
-                        <input
-                            placeholder="Titre"
-                            style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
+                        <input placeholder="Titre" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" />
+                        <input placeholder="Entreprise" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" />
+                        <input type="date" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" />
+                        <input type="tel" name="tel" id="tel" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" placeholder="+228 -- -- -- --" />
+                        <textarea placeholder="Description" rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" />
 
-                        <input
-                            placeholder="Entreprise"
-                            style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
-
-                        <textarea
-                            placeholder="Description"
-                            rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
-
-                        <input
-                            type="date"
-                            style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
                     </div>
                 </section>
 
@@ -194,35 +176,41 @@ const page = () => {
                             <option>Fullstack</option>
                         </select>
 
-                        <textarea placeholder="Description courte"
-                            rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
+                        <textarea placeholder="Description courte" rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
+                        <textarea placeholder="Description complète" rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
+                        <input placeholder="Lien GitHub" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" />
+                        <input placeholder="Lien du projet" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
 
-                        <textarea placeholder="Description complète"
-                            rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
+                        <textarea placeholder="Fonctionnalités principales" rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
+                        <textarea placeholder="Challenges techniques" rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none" />
+                        <div className="w-full flex flex-col gap-4">
+                            <input placeholder="Technologies frontend" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
+                            <input placeholder="Technologies backend" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
+                            <input placeholder="Extra" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
+                        </div>
+                        <textarea placeholder="Ce que j’ai appris" rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
+                        <input placeholder="Durée de réalisation" style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"/>
+                        
+                        <select style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none">
+                            
+                            <option>Type de projet</option>
+                            <option>Application web</option>
+                            <option>Application mobile</option>
+                            <option>Site Web</option>
+                        </select>  
 
-                        <input placeholder="Lien GitHub"
-                            style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
+                        <select style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none">
+                            
+                            <option>Collaboration</option>
+                            <option>Perso</option>
+                            <option>Client</option>
+                        </select>   
 
-                        <input placeholder="Lien du projet"
-                            style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
-
-                        <textarea placeholder="Fonctionnalités principales"
-                            rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
-
-                        <textarea placeholder="Challenges techniques"
-                            rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
-
-                        <textarea
-                            placeholder="Ce que j’ai appris"
-                            rows={6} style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none"
-                        />
-
+                        <select style={{ backgroundColor: COLORS.black[800] }} className="backdrop-blur-md p-4 rounded-md text-sm outline-none border-none">
+                            <option>Status</option>
+                            <option>En dev</option>
+                            <option>En prod</option>
+                        </select>                        
 
                     </div>
 
