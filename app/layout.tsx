@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Jost, Poppins } from "next/font/google";
+import { Jost, Poppins, Inter } from "next/font/google";
 import "./globals.css";
 // Supports weights 200-800
 import '@fontsource-variable/bricolage-grotesque/wght.css';
@@ -7,6 +7,12 @@ import '@fontsource-variable/bricolage-grotesque/wght.css';
 const jost = Jost({
     variable: "--font-jost",
     subsets: ["latin"],
+});
+
+const inter = Jost({
+    variable: "--font-inter",
+    subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700"],
 });
 
 
@@ -49,11 +55,12 @@ export default function RootLayout({
             className={`
                 ${jost.variable}
                 ${poppins.variable}
+                ${inter.variable}
                 h-full
                 antialiased
             `}
         >
-            <body className={`${jost.variable} ${poppins.variable} min-h-full w-full`}>
+            <body className={`${jost.variable} ${poppins.variable} ${inter.variable}`}>
                 {children}
             </body>
         </html>

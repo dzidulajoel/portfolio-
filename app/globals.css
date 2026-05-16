@@ -1,5 +1,46 @@
+@import "tailwindcss";
+
 :root {
-  --font-jost: "Jost", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
-  --font-bricolage:  'Bricolage Grotesque Variable', sans-serif;
+    --font-jost: "Jost", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-bricolage: "Bricolage Grotesque Variable", sans-serif;
+}
+
+@layer base {
+
+    html,
+    .scroll-container {
+        scroll-behavior: smooth;
+        overflow: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar,
+    .scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* masque la scrollbar partout */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body{
+    font-family: var(--font-poppins);
+}
+
+.infoP{
+    font-weight: 400;
+}
+
+.profil{
+    font-weight: 500;
 }
